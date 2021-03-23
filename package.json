@@ -1,0 +1,37 @@
+{
+  "name": "hackerbay",
+  "version": "1.0.0",
+  "description": "my interview project",
+  "main": "index.js",
+  "scripts": {
+    "start": "node ./bin/www",
+    "test": "node ./node_modules/mocha/bin/mocha unitTest/unitTest.js --reporter spec",
+    "coverage": "nyc --reporter=text node ./node_modules/mocha/bin/mocha unitTest/unitTest.js --reporter spec"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kidmeeno/hackerbayProjectBackend.git"
+  },
+  "author": "Bosah Arthur",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/kidmeeno/hackerbayProjectBackend/issues"
+  },
+  "homepage": "https://github.com/kidmeeno/hackerbayProjectBackend#readme",
+  "dependencies": {
+    "chai": "^4.2.0",
+    "cookie-parser": "^1.4.4",
+    "cors": "^2.8.5",
+    "debug": "^4.1.1",
+    "dotenv": "^8.0.0",
+    "express": "^4.17.1",
+    "jsonpatch": "^3.0.1",
+    "jsonwebtoken": "^8.5.1",
+    "mocha": "^6.1.4",
+    "morgan": "^1.9.1",
+    "node-thumbnail": "^0.15.0",
+    "normalize-port": "^1.0.0",
+    "nyc": "^14.1.1",
+    "supertest": "^4.0.2"
+  }
+}
